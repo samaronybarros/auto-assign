@@ -6,6 +6,7 @@
   "author": "Sam Barros <sam.barros@flexcavo.de>",
   "license": "MIT",
   "scripts": {
+    "prepare": "yarn && yarn build",
     "build": "npx tsc"
   },
   "devDependencies": {
