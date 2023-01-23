@@ -1,0 +1,19 @@
+{
+  "name": "auto-assign",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:samaronybarros/auto-assign.git",
+  "author": "Sam Barros <sam.barros@flexcavo.de>",
+  "license": "MIT",
+  "scripts": {
+    "build": "npx tsc"
+  },
+  "devDependencies": {
+    "@types/node": "^18.11.18",
+    "typescript": "^4.9.4"
+  },
+  "dependencies": {
+    "@actions/core": "^1.10.0",
+    "@actions/github": "^5.1.1"
+  }
+}

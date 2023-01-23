@@ -1,0 +1,10 @@
+name: GitHub Pull Request Auto Assign
+description: "Assign author to pull requests when the pull requests are opened."
+author: "samaronybarros"
+inputs:
+  repo-token:
+    description: "A token for the repository"
+    default: ${{ github.token }}
+runs:
+  using: "node16"
+  main: "build/index.js"
