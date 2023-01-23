@@ -23,4 +23,4 @@ jobs:
         run: npm install && npm run build
 
       - name: "Assign author"
-        run: ./build/index.js
+        uses: samaronybarros/auto-assign@0.0.5
