@@ -5,6 +5,7 @@
   "repository": "git@github.com:samaronybarros/auto-assign.git",
   "author": "Sam Barros <sam.barros@flexcavo.de>",
   "license": "MIT",
+  "type": "module",
   "scripts": {
     "build": "npx tsc"
   },
