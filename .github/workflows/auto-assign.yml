@@ -11,4 +11,4 @@ jobs:
   assign-author:
     runs-on: ubuntu-latest
     steps:
-      - uses: build/index.js
+      - uses: samaronybarros/auto-assign
