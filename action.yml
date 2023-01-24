@@ -1,10 +1,24 @@
 name: GitHub Pull Request Auto Assign
 description: "Assign author to pull requests when the pull requests are opened."
 author: "samaronybarros"
+
 inputs:
   repo-token:
-    description: "A token for the repository"
+    description: "The repository token"
     default: ${{ github.token }}
+
 runs:
   using: "node16"
+  steps:
+    - name: "Checkout repository"
+      uses: actions/checkout@v3
+
+    - name: "Use Node.js v${{ matrix.node-version }}"
+      uses: actions/setup-node@v3
+      with:
+        node-version: ${{ matrix.node-version }}
+
+    - name: "Install and build"
+      run: npm install && npm run build
+
   main: "build/index.js"
