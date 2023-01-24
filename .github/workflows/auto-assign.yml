@@ -11,16 +11,5 @@ jobs:
   assign-author:
     runs-on: ubuntu-latest
     steps:
-      - name: "Checkout repository"
-        uses: actions/checkout@v3
-
-      - name: "Use Node.js v${{ matrix.node-version }}"
-        uses: actions/setup-node@v3
-        with:
-          node-version: ${{ matrix.node-version }}
-
-      - name: "Install and build"
-        run: npm install && npm run build
-
       - name: "Assign author"
         run: npm start
